@@ -1,0 +1,144 @@
+:root {
+    --text-dark: #8B8E99;
+    --bg-light: #FFFFFF;
+    --bg-card: #F6F6F6;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", serif;
+}
+
+button, input {
+    font-family: "Poppins", serif;
+}
+
+.hero_section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#383638, #0B0B0B);
+}
+
+header {
+    height: 80px;
+    color: white;
+
+    > .branding {
+        > img {
+            width: 27px;
+            height: 27px;
+        }
+    }
+
+    > .nav_links {
+        color: var(--text-dark);
+    }
+
+    > .cta {
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.content_container {
+    height: calc(100vh - 80px);
+
+    >.content {
+        > p {
+            color: var(--text-dark);
+        }
+    }
+
+    >.image {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.search-input {
+    background: var(--bg-light);
+    height: 60px;
+
+    > img {
+        width: 27px;
+        height: 27px;
+        margin: 0 10px;
+        box-sizing: border-box;
+    }
+
+    > input {
+        height: 100%;
+    }
+
+    /* > input::placeholder {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    } */
+
+    > button {
+        color: var(--bg-light);
+        font-weight: bold;
+    }
+}
+
+
+
+.brand_card {
+    background: var(--bg-card);
+    height: 240px;
+}
+
+.brand_card:hover {
+    > .on-hover-cta {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.cart-cta {
+    width: 50px;
+    height: 50px;
+    background: #3858D6;
+    border-radius: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
+.on-hover-cta {
+    display: none;
+    visibility: hidden;
+    opacity: 0;   
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    >.cart-cta {
+        width: 50px;
+        height: 50px;
+        background: #3858D6;
+        border-radius: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    >.like-cta {
+        width: 50px;
+        height: 50px;
+        background: #FF6B6B;
+        border-radius: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    div > img {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/watch.jpg" rel="icon">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <section id="hero" class="hero_section">
+            <header class="flex justify-between	 application_header mx-auto max-w-7xl px-4 py-2">
+                <div class="flex items-center branding">
+                    <img src="./assets/watch.jpg" alt="Apple watch Icon" />
+                    <h4>Wearables</h4>
+                </div>
+                <nav class="flex items-center nav_links">
+                    <ul class="flex gap-x-6">
+                        <li>Home</li>
+                        <li>Brands</li>
+                        <li>Recent Products</li>
+                        <li>Contact</li>
+                        <li>About</li>
+                    </ul>
+                </nav>
+                <div class="flex items-center cta gap-x-6">
+                    <img src="./assets/search.png" class="w-full h-auto" />
+                    <img src="./assets/person.png" />
+                    <div>
+                        <img src="./assets/cart.png" />
+                        <span class="flex justify-end absolute -mt-5 ml-3">
+                            <span class="relative items-center text-sm inline-flex rounded-full h-3 w-3 bg-blue-600"></span>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <div class="flex flex-col-reverse md:flex-row content_container mx-auto max-w-7xl px-4 py-2">
+                <div class="flex flex-col justify-center content md:w-1/2 h-full">
+                    <h1 class="text-6xl font-bold leading-16 mb-4 text-white">Discover Most Suitable Watches</h1>
+                    <p class="mb-4 text-white">Find the best, reliable, and cheap smart watches here. We focus on
+                        product quality. Here you can find smart watches of almost all brands. So why you are waiting?
+                        Just order now!</p>
+                    <div class="flex items-center rounded-2xl p-2 search-input">
+                        <img class="w-1/6" src="./assets/search.svg" />
+                        <input class="w-3/4" placeholder="Find the best brands" />
+                        <button class="bg-blue-600 rounded-2xl w-1/4 btn px-2 py-3">Search</button>
+                    </div>
+                </div>
+                <div class="image md:w-1/2 h-full" style="background-image: url('./assets/producthero.png');">
+                </div>
+            </div>
+        </section>
+        <section id="brands" class="mx-auto max-w-7xl px-4 py-14 listing-section">
+            <h6 class="text-center text-blue-800">Find the most favourite brands</h6>
+            <h3 class="text-3xl font-bold text-center mb-10">Our Top Selling Brands</h3>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <div class="brand_card flex items-center p-10 rounded-2xl gap-x-4">
+                    <img width="w-1/3" src="./assets/watch1.svg" />
+                    <div>
+                        <h4 class="text-3xl font-bold mb-2">Apple</h4>
+                        <p class="text-sm">Apple is one of the most famous smart watches providing company.</p>
+                    </div>
+                </div>
+                <div class="brand_card flex items-center p-10 rounded-2xl gap-x-4">
+                    <img width="w-1/3" src="./assets/watch2.svg" />
+                    <div>
+                        <h4 class="text-3xl font-bold mb-2">Xiaomi</h4>
+                        <p class="text-sm">Xiaomi smart watches are produced by MI company.</p>
+                    </div>
+                </div>
+                <div class="brand_card flex items-center p-10 rounded-2xl gap-x-4">
+                    <img width="w-1/3" src="./assets/watch3.svg" />
+                    <div>
+                        <h4 class="text-3xl font-bold mb-2">FitBit</h4>
+                        <p class="text-sm">FitBit smart watches are best for there health and fitness features.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="products" class="mx-auto max-w-7xl px-4 py-14 listing-section">
+            <h6 class="text-center text-blue-800">Find your favourite smart watch</h6>
+            <h3 class="text-3xl font-bold text-center mb-10">Our Latest Products</h3>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <div class="relative bg-white rounded-xl shadow-lg max-w-xs w-full hover:shadow-2xl transition-shadow duration-300 overflow-hidden group">
+                    <div class="relative">
+                        <img src="./assets/watch1.png" alt="Product" class="w-full h-64 object-contain group-hover:opacity-75">
+                        <div class="flex flex-col absolute top-4 right-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                                <i class="fas fa-shopping-cart text-blue-500"></i>
+                            </button>
+                            <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                                <i class="fas fa-heart text-red-500"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Apple Smart I</h3>
+                        <div class="flex items-center justify-between mb-2">
+                            <div>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                                <span class="text-sm text-gray-600 ml-2">(4.5)</span>
+                            </div>
+                            <span class="text-sm text-green-500 font-medium">In Stock</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <p class="text-xl font-bold text-gray-600 line-through">$300.00</p>
+                            <p class="text-xl font-bold text-gray-600">$255.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bg-white rounded-xl shadow-lg max-w-xs w-full hover:shadow-2xl transition-shadow duration-300 overflow-hidden group">
+                    <div class="relative">
+                        <img src="./assets/watch2.png" alt="Product" class="w-full h-64 object-contain group-hover:opacity-75">
+                        <div class="flex flex-col absolute top-4 right-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                                <i class="fas fa-shopping-cart text-blue-500"></i>
+                            </button>
+                            <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                                <i class="fas fa-heart text-red-500"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Apple Smart II</h3>
+                        <div class="flex items-center justify-between mb-2">
+                            <div>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                                <span class="text-sm text-gray-600 ml-2">(4.5)</span>
+                            </div>
+                            <span class="text-sm text-green-500 font-medium">In Stock</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <p class="text-xl font-bold text-gray-600 line-through">$300.00</p>
+                            <p class="text-xl font-bold text-gray-600">$255.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bg-white rounded-xl shadow-lg max-w-xs w-full hover:shadow-2xl transition-shadow duration-300 overflow-hidden group">
+                    <div class="relative">
+                        <img src="./assets/watch3.png" alt="Product" class="w-full h-64 object-contain group-hover:opacity-75">
+                        <div class="flex flex-col absolute top-4 right-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                                <i class="fas fa-shopping-cart text-blue-500"></i>
+                            </button>
+                            <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                                <i class="fas fa-heart text-red-500"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Apple Smart III</h3>
+                        <div class="flex items-center justify-between mb-2">
+                            <div>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-sm text-gray-600 ml-2">(4)</span>
+                            </div>
+                            <span class="text-sm text-green-500 font-medium">In Stock</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <p class="text-xl font-bold text-gray-600 line-through">$300.00</p>
+                            <p class="text-xl font-bold text-gray-600">$255.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bg-white rounded-xl shadow-lg max-w-xs w-full hover:shadow-2xl transition-shadow duration-300 overflow-hidden group">
+                    <div class="relative">
+                        <img src="./assets/watch4.png" alt="Product" class="w-full h-64 object-contain group-hover:opacity-75">
+                        <div class="flex flex-col absolute top-4 right-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                                <i class="fas fa-shopping-cart text-blue-500"></i>
+                            </button>
+                            <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                                <i class="fas fa-heart text-red-500"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Apple Smart IV</h3>
+                        <div class="flex items-center justify-between mb-2">
+                            <div>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-sm text-gray-600 ml-2">(5)</span>
+                            </div>
+                            <span class="text-sm text-green-500 font-medium">In Stock</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <p class="text-xl font-bold text-gray-600 line-through">$450.00</p>
+                            <p class="text-xl font-bold text-gray-600">$399.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bg-white rounded-xl shadow-lg max-w-xs w-full hover:shadow-2xl transition-shadow duration-300 overflow-hidden group">
+                    <div class="relative">
+                        <img src="./assets/watch5.png" alt="Product" class="w-full h-64 object-contain group-hover:opacity-75">
+                        <div class="flex flex-col absolute top-4 right-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                                <i class="fas fa-shopping-cart text-blue-500"></i>
+                            </button>
+                            <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                                <i class="fas fa-heart text-red-500"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Samsung Watch Pro</h3>
+                        <div class="flex items-center justify-between mb-2">
+                            <div>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-sm text-gray-600 ml-2">(5)</span>
+                            </div>
+                            <span class="text-sm text-green-500 font-medium">In Stock</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <p class="text-xl font-bold text-gray-600 line-through">$300.00</p>
+                            <p class="text-xl font-bold text-gray-600">$255.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative bg-white rounded-xl shadow-lg max-w-xs w-full hover:shadow-2xl transition-shadow duration-300 overflow-hidden group">
+                    <div class="relative">
+                        <img src="./assets/watch6.png" alt="Product" class="w-full h-64 object-contain group-hover:opacity-75">
+                        <div class="flex flex-col absolute top-4 right-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                                <i class="fas fa-shopping-cart text-blue-500"></i>
+                            </button>
+                            <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-100">
+                                <i class="fas fa-heart text-red-500"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Fitbit Max 1</h3>
+                        <div class="flex items-center justify-between mb-2">
+                            <div>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                                <span class="text-sm text-gray-600 ml-2">(4.5)</span>
+                            </div>
+                            <span class="text-sm text-green-500 font-medium">In Stock</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <p class="text-xl font-bold text-gray-600 line-through"></p>
+                            <p class="text-xl font-bold text-gray-600">$155.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-10 px-10 mx-0 min-w-full flex flex-col items-center">
+                <button type="button" class="w-40 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2">View More</button>
+            </div>
+        </section>
+
+        <section id="testimonial" class="mx-auto max-w-7xl px-4 py-14 listing-section">
+            <h6 class="text-center text-blue-800">Here are our some of the best clients.</h6>
+            <h3 class="text-3xl font-bold text-center mb-10">What People Say About Us</h3>
+            <div class="grid grid-cols-1 gap-20 md:grid-cols-1 lg:grid-cols-2">
+                <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="assets/review-1.png" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Hamza Faizi</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Don't waste time, just order! This is the best website to puschase smart watches.</p>
+                        <div>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="assets/review-2.png" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Hafiz Huzaifa</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">I’ve been purchasing smart watches of Mohid for a long time. All the products are good quality.</p>
+                        <div>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="subscribe" class="mx-auto max-w-7xl px-4 py-14 listing-section content-center">
+            <div class="bg-[#F6F6F6] py-16 px-6">
+                <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center md:gap-6 gap-12">
+                  <div class="max-md:order-1 md:px-20 sm:px-0">
+                    <h2 class="text-gray-800 text-3xl font-bold mb-6 px-2">Subscribe to Newsletter</h2>
+                    <p class="text-base text-gray-600 px-2">Get free guide about smart watches daily.</p>
+                    <div class="relative flex items-center px-1 bg-[#edf2f7] border-2 focus-within:border-[#007bff] focus-within:bg-transparent rounded mt-4">
+                        <input type="email" placeholder="Enter Email Address" class="px-2 py-3 text-gray-800 w-full text-sm bg-transparent outline-none" />
+                        <button type="button" class="px-4 py-2.5 rounded text-white text-sm tracking-wider border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <img class="sm:w-60 w-40 shrink-0 inline-block" src="assets/subscribe.png" alt="">
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <footer class="w-full py-5 bg-black text-white">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between">
+                    <span class="text-lg text-center block">All rights reserved <a href="#" class="text-yellow-400">wearables</a> 2025.</span>
+                    <span class="text-sm content-center text-center block"><a href="#" class="text-yellow-400 hover:text-white">Privacy Policy</a> / <a href="#" class="text-yellow-400 hover:text-white">Terms & Conditions</a> / <a href="#" class="text-yellow-400 hover:text-white">Payment Policy</a></span>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
